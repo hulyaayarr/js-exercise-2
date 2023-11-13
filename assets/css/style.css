@@ -1,0 +1,22 @@
+body{
+    color: white;
+}
+.bg{
+    overflow: hidden;
+    background: url('../images/football_field.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bg-color{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 200px;
+
+}
+
+.ball{
+    margin-top: 80px;
+    max-width: 100px;
+    animation: animate 4s linear infinite;
+}
+
