@@ -1,6 +1,3 @@
-body{
-    color: white;
-}
 .bg{
     overflow: hidden;
     background: url('../images/football_field.jpg');
@@ -11,7 +8,6 @@ body{
 .bg-color{
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 200px;
-
 }
 
 .ball{
