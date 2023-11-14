@@ -1,5 +1,5 @@
-let goal_a = document.getElementById("a_team")
-let goal_b = document.getElementById("b_team")
+let goal_a = 0;
+let goal_b = 0;
 
 function addGoal_a() {
     goal_a +=1;
@@ -38,19 +38,24 @@ function changeTeam_b(){
 }
 
 function enterGoal_a() {
-    let newScore_a = prompt("What is the score of the first team?");
+    let newPrompt_a = prompt("What is the score of the first team?");
+    newScore_a = parseInt(newPrompt_a)
+    
     if (isNaN(newScore_a)) {
         alert("Not a number! Try again...");
     } else {
+        goal_a = newScore_a;
         document.getElementById("a_team").innerHTML = newScore_a + " ";
     }
 }
 
 function enterGoal_b(){
-    let newScore_b = prompt("What is the score of the second team?")
+    let newPrompt_b = prompt("What is the score of the second team?")
+    newScore_b = parseInt(newPrompt_b)
     if (isNaN(newScore_b)) {
         alert("Not a number! Try again...");
     } else {
+        goal_b = newScore_b;
         document.getElementById("b_team").innerHTML = newScore_b;
     }
 
