@@ -41,7 +41,7 @@ function enterGoal_a() {
     let newPrompt_a = prompt("What is the score of the first team?");
     newScore_a = parseInt(newPrompt_a)
     
-    if (isNaN(newScore_a)) {
+    if (isNaN(newScore_a) || +newScore_a < 0) {
         alert("Not a number! Try again...");
     } else {
         goal_a = newScore_a;
@@ -52,8 +52,8 @@ function enterGoal_a() {
 function enterGoal_b(){
     let newPrompt_b = prompt("What is the score of the second team?")
     newScore_b = parseInt(newPrompt_b)
-    if (isNaN(newScore_b)) {
-        alert("Not a number! Try again...");
+    if (isNaN(newScore_b) || +newScore_a < 0) {
+        alert("Not a valid number! Try again...");
     } else {
         goal_b = newScore_b;
         document.getElementById("b_team").innerHTML = newScore_b;
