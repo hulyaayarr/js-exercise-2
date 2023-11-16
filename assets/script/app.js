@@ -42,7 +42,7 @@ function enterGoal_a() {
     newScore_a = parseInt(newPrompt_a)
     
     if (isNaN(newScore_a) || +newScore_a < 0) {
-        alert("Not a number! Try again...");
+        alert("Not a valid number! Try again...");
     } else {
         goal_a = newScore_a;
         document.getElementById("a_team").innerHTML = newScore_a + " ";
